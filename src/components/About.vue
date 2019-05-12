@@ -15,7 +15,7 @@
         class="lead mb-5"
       >I am experienced in Vue.js and React.js in which I produce high quality code for my clients that are both well performing and well tested. I focus on solving problems, not only technical problems but creating an awesome experience for the users of my software both visual and accessible. Mixing powerful tools and knowledge about the users brings visual UI's to life and leads to webpages being accessible and useful.</p>
       <p class="lead mb-5">
-        Get your resume started using this template with Gridsome here:
+        Get your own resume started using this template with Gridsome here:
         <a
           href="https://github.com/LokeCarlsson/gridsome-starter-resume"
           target="_blank"
