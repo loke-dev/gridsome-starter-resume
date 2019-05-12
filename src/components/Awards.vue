@@ -4,35 +4,25 @@
       <h2 class="mb-5">Awards &amp; Certifications</h2>
       <ul class="fa-ul mb-0">
         <li>
-          <font-awesome class="fa-li text-warning" :icon="['fas', 'trophy']"/>Google Analytics Certified Developer
+          <font-awesome class="fa-li text-warning" :icon="['fas', 'trophy']"/>CSS Design Awards
         </li>
         <li>
-          <font-awesome class="fa-li text-warning" :icon="['fas', 'trophy']"/>Mobile Web Specialist - Google Certification
-        </li>
-        <li>
-          <font-awesome class="fa-li text-warning" :icon="['fas', 'trophy']"/>1
-          <sup>st</sup>
-          Place - University of Colorado Boulder - Emerging Tech Competition 2009
+          <font-awesome class="fa-li text-warning" :icon="['fas', 'trophy']"/>Shopify Commerce Awards
         </li>
         <li>
           <font-awesome class="fa-li text-warning" :icon="['fas', 'trophy']"/>1
           <sup>st</sup>
-          Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-        </li>
-        <li>
-          <font-awesome class="fa-li text-warning" :icon="['fas', 'trophy']"/>2
-          <sup>nd</sup>
-          Place - University of Colorado Boulder - Emerging Tech Competition 2008
+          Place - Foobar - Emerging Tech Competition 2012
         </li>
         <li>
           <font-awesome class="fa-li text-warning" :icon="['fas', 'trophy']"/>1
           <sup>st</sup>
-          Place - James Buchanan High School - Hackathon 2006
+          Place - Foo Bar High School - Hackathon 2010
         </li>
         <li>
           <font-awesome class="fa-li text-warning" :icon="['fas', 'trophy']"/>3
           <sup>rd</sup>
-          Place - James Buchanan High School - Hackathon 2005
+          Place - Foo Bar High School - Hackathon 2009
         </li>
       </ul>
     </div>

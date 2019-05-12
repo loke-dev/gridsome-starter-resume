@@ -13,7 +13,7 @@
       </div>
       <p
         class="lead mb-5"
-      >I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+      >I am experienced in Vue.js and React.js in which I produce high quality code for my clients that are both well performing and well tested. I focus on solving problems, not only technical problems but creating an awesome experience for the users of my software both visual and accessible. Mixing powerful tools and knowledge about the users brings visual UI's to life and leads to webpages being accessible and useful.</p>
       <div class="social-icons">
         <a href="https://linkedin.com/in/lokecarlsson" target="_blank" rel="noopener noreferrer">
           <font-awesome :icon="['fab', 'linkedin']"/>

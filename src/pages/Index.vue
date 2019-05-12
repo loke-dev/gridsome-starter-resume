@@ -34,7 +34,8 @@ export default {
     Awards
   },
   metaInfo: {
-    title: "Gridsome starter resume"
+    title: "Gridsome Starter Resume",
+    titleTemplate: "%s - Create your resume quick and easy!"
   }
 };
 </script>

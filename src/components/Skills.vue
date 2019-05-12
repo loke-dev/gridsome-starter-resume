@@ -57,6 +57,12 @@
         <li>
           <font-awesome class="fa-li" :icon="['fas', 'check']"/>Agile Development &amp; Scrum
         </li>
+        <li>
+          <font-awesome class="fa-li" :icon="['fas', 'check']"/>Cutting edge JavaScript frameworks
+        </li>
+        <li>
+          <font-awesome class="fa-li" :icon="['fas', 'check']"/>Design principles and UX
+        </li>
       </ul>
     </div>
   </section>
