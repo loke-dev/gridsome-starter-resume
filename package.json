@@ -1,6 +1,5 @@
 {
   "name": "gridsome-starter-resume",
-  "private": true,
   "scripts": {
     "build": "gridsome build",
     "dev": "gridsome develop",
