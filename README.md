@@ -15,7 +15,6 @@ This starter project includes some of the latest powerful technologies.
 - **Gridsome -** Vue.js & GraphQL powered framework genrating static files.
 - **Bootstrap & Bootstrap Vue -** Powerful styling and layout with styled Vue components.
 - **Sass -** Professional grade CSS extension with many features.
-- **Markdown -** Easy and widely used format for writing content.
 - **Google Analytics -** Just add your tracking ID in the config.
 - **Sitemap generator -** Automatically generates a sitemap.xml file.
 
