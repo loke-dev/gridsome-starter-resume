@@ -34,7 +34,7 @@ export default {
     Awards
   },
   metaInfo: {
-    title: "Gridsome starter bootstrap"
+    title: "Gridsome starter resume"
   }
 };
 </script>
@@ -108,10 +108,6 @@ section.resume-section .resume-item .resume-date {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
-}
-
-.bg-primary {
-  background-color: #bd5d38 !important;
 }
 
 .text-primary {
