@@ -1,6 +1,6 @@
 <p align="center"><a href="https://gridsome-starter-resume.loke.dev"><img alt="logo" width="200" src="https://gridsome-starter-bootstrap.loke.dev/logo.png" /></a></p>
 
-# Gridsome starter bootstrap
+# Gridsome starter resume
 
 This is a starter project for Gridsome that helps you set up a resume quick and easy. It utilizes Bootstrap that is well known for powerful styling and layout.
 
