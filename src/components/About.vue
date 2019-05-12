@@ -37,6 +37,7 @@
 
 <style lang="scss" scoped>
 .social-icons a {
+  cursor: pointer;
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
@@ -47,7 +48,14 @@
   font-size: 1.5rem;
   line-height: 3.5rem;
   margin-right: 1rem;
-  cursor: pointer;
+
+  @media (max-width: 380px) {
+    margin-right: 0.5rem;
+  }
+
+  @media (max-width: 350px) {
+    margin-right: 0.2rem;
+  }
 }
 
 .social-icons a:last-child {
