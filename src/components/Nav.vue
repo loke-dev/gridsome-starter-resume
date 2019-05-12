@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <g-link to="/" class="navbar-brand">
+    <div v-on:click.prevent="$scrollTo('#about')" class="navbar-brand">
       <span class="d-block d-lg-none">Loke Carlsson</span>
       <span class="d-none d-lg-block">
         <g-image
@@ -9,7 +9,7 @@
           class="img-fluid img-profile rounded-circle mx-auto mb-2"
         />
       </span>
-    </g-link>
+    </div>
     <button
       class="navbar-toggler"
       type="button"

@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
@@ -54,34 +54,12 @@ export default {
   align-items: center;
 }
 
-.social-icons a {
-  display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
-  color: #fff !important;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 1rem;
-  cursor: pointer;
-}
-
-.social-icons a:last-child {
-  margin-right: 0;
-}
-
-.social-icons a:hover {
-  background-color: #bd5d38;
-}
-
 .dev-icons {
   font-size: 3rem;
 }
 
 .dev-icons .list-inline-item svg:hover {
-  color: #bd5d38;
+  color: var(--primary);
 }
 
 section.resume-section {
@@ -108,19 +86,5 @@ section.resume-section .resume-item .resume-date {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
-}
-
-.text-primary {
-  color: #bd5d38 !important;
-}
-
-a {
-  color: #bd5d38;
-}
-
-a:hover,
-a:focus,
-a:active {
-  color: #824027;
 }
 </style>

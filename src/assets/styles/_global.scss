@@ -5,6 +5,7 @@ body {
   padding-top: 54px;
   color: $gray-600;
 }
+
 @media (min-width: 992px) {
   body {
     padding-top: 0;
@@ -61,9 +62,11 @@ p.lead {
     font-size: 1.5rem;
     line-height: 3.5rem;
     margin-right: 1rem;
+
     &:last-child {
       margin-right: 0;
     }
+
     &:hover {
       background-color: $primary;
     }
@@ -72,6 +75,7 @@ p.lead {
 
 .dev-icons {
   font-size: 3rem;
+
   .list-inline-item i {
     &:hover {
       color: $primary;
