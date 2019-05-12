@@ -21,6 +21,10 @@ This starter project includes some of the latest powerful technologies.
 
 ### Getting started
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LokeCarlsson/gridsome-starter-resume)
+
+**or manually follow the guide below**
+
 If you haven't already installed Gridsome CLI: `npm install --global @gridsome/cli`
 
 1. `gridsome create my-gridsome-site https://github.com/LokeCarlsson/gridsome-starter-resume.git`
