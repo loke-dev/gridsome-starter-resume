@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <div v-on:click.prevent="$scrollTo('#about')" class="navbar-brand">
+    <div v-on:click.prevent="scrollTo('#about')" class="navbar-brand">
       <span class="d-block d-lg-none">Loke Carlsson</span>
       <span class="d-none d-lg-block">
         <g-image
@@ -14,27 +14,44 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" v-on:click.prevent="$scrollTo('#about')">About</a>
+          <a class="nav-link" id="about-link" v-on:click.prevent="scrollTo('#about')">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" v-on:click.prevent="$scrollTo('#experience')">Experience</a>
+          <a class="nav-link" id="experience-link" v-on:click.prevent="scrollTo('#experience')">Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" v-on:click.prevent="$scrollTo('#education')">Education</a>
+          <a class="nav-link" id="education-link" v-on:click.prevent="scrollTo('#education')">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" v-on:click.prevent="$scrollTo('#skills')">Skills</a>
+          <a class="nav-link" id="skills-link" v-on:click.prevent="scrollTo('#skills')">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" v-on:click.prevent="$scrollTo('#interests')">Interests</a>
+          <a class="nav-link" id="interests-link" v-on:click.prevent="scrollTo('#interests')">Interests</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" v-on:click.prevent="$scrollTo('#awards')">Awards</a>
+          <a class="nav-link" id="awards-link" v-on:click.prevent="scrollTo('#awards')">Awards</a>
         </li>
       </ul>
     </div>
   </nav>
 </template>
+
+<script>
+export default {
+  methods: {
+    scrollTo(element) {
+      const targetId = `${element}-link`.replace('#','');
+      const anchorTag = document.getElementById(targetId);
+      const navlinks = document.getElementsByClassName("nav-link");
+      [...navlinks].forEach((element, index, array) => {
+        if (element.id === targetId) anchorTag.className += " active";
+        else element.className = "nav-link";
+      });
+      this.$scrollTo(element);
+    }
+  }
+}
+</script>
 
 <style scoped lang="scss">
 .navbar-brand,
