@@ -1,4 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c6a0b67d-7f94-4676-acd9-03ad7716ee98/deploy-status)](https://app.netlify.com/sites/gridsome-starter-resume/deploys)
+[![Greenkeeper badge](https://badges.greenkeeper.io/lokecarlsson/gridsome-starter-resume.svg)](https://greenkeeper.io/)
 
 # Gridsome starter resume
 
@@ -20,7 +21,7 @@ This starter project includes some of the latest powerful technologies.
 
 ### Getting started
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LokeCarlsson/gridsome-starter-resume) [![Greenkeeper badge](https://badges.greenkeeper.io/lokecarlsson/gridsome-starter-resume.svg)](https://greenkeeper.io/)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LokeCarlsson/gridsome-starter-resume)
 
 **or manually follow the guide below**
 
