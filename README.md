@@ -20,7 +20,7 @@ This starter project includes some of the latest powerful technologies.
 
 ### Getting started
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LokeCarlsson/gridsome-starter-resume)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LokeCarlsson/gridsome-starter-resume) [![Greenkeeper badge](https://badges.greenkeeper.io/lokecarlsson/gridsome-starter-resume.svg)](https://greenkeeper.io/)
 
 **or manually follow the guide below**
 
