@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0" id="nav-scroller" ref="content" style="position:relative;overflow-y:auto">
       <About/>
       <hr class="m-0">
       <Experience/>

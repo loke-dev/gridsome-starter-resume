@@ -1,5 +1,57 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <b-navbar
+    toggleable="lg"
+    type="dark"
+    variant="primary"
+    fixed="top"
+    id="sideNav"
+    v-b-scrollspy:nav-scroller
+  >
+    <b-navbar-brand href="#about" @click="scrollIntoView">
+      <span class="d-block d-lg-none">Loke Carlsson</span>
+      <span class="d-none d-lg-block">
+        <g-image
+          alt="Image of Loke"
+          src="../assets/images/profile.png"
+          class="img-fluid img-profile rounded-circle mx-auto mb-2"
+        />
+      </span>
+    </b-navbar-brand>
+    <b-navbar-toggle target="navbar-collapse"></b-navbar-toggle>
+    <b-collapse id="navbar-collapse" is-nav>
+      <b-navbar-nav>
+        <b-nav-item id="about-link" href="#about" @click="scrollIntoView"
+          >About</b-nav-item
+        >
+        <b-nav-item
+          id="experience-link"
+          href="#experience"
+          @click="scrollIntoView"
+          >Experience</b-nav-item
+        >
+        <b-nav-item
+          id="education-link"
+          href="#education"
+          @click="scrollIntoView"
+          >Education</b-nav-item
+        >
+        <b-nav-item id="skills-link" href="#skills" @click="scrollIntoView"
+          >Skills</b-nav-item
+        >
+        <b-nav-item
+          id="interests-link"
+          href="#interests"
+          @click="scrollIntoView"
+          >Interests</b-nav-item
+        >
+        <b-nav-item id="awards-link" href="#awards" @click="scrollIntoView"
+          >Awards</b-nav-item
+        >
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <div v-on:click.prevent="scrollTo('#about')" class="navbar-brand">
       <span class="d-block d-lg-none">Loke Carlsson</span>
       <span class="d-none d-lg-block">
@@ -11,7 +63,7 @@
       </span>
     </div>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" id="about-link" v-on:click.prevent="scrollTo('#about')">About</a>
@@ -33,24 +85,42 @@
         </li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
 </template>
 
 <script>
 export default {
   methods: {
-    scrollTo(element) {
-      const targetId = `${element}-link`.replace('#','');
+    // scrollTo(element) {
+    //   const targetId = `${element}-link`.replace("#", "");
+    //   const anchorTag = document.getElementById(targetId);
+    //   const navlinks = document.getElementsByClassName("nav-link");
+    //   [...navlinks].forEach((element, index, array) => {
+    //     if (element.id === targetId) anchorTag.className += " active";
+    //     else element.className = "nav-link";
+    //   });
+    //   this.$scrollTo(element);
+    // },
+    scrollIntoView(evt) {
+      evt.preventDefault();
+      console.log(evt.target)
+      const href = evt.target.getAttribute("href");
+      const el = href ? document.querySelector(href) : null;
+      const targetId = href.replace("#", "");
       const anchorTag = document.getElementById(targetId);
       const navlinks = document.getElementsByClassName("nav-link");
-      [...navlinks].forEach((element, index, array) => {
-        if (element.id === targetId) anchorTag.className += " active";
-        else element.className = "nav-link";
-      });
-      this.$scrollTo(element);
+      if (el) {
+        // this.$refs.content.scrollTop = el.offsetTop;
+        [...navlinks].forEach((element, index, array) => {
+          const hrefLink = element.getAttribute("href").replace("#", "");
+          if (hrefLink === targetId) { element.className += " active"; }
+          else element.className = "nav-link";
+        });
+        this.$scrollTo(el);
+      }
     }
   }
-}
+};
 </script>
 
 <style scoped lang="scss">
