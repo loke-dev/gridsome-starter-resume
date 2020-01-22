@@ -20,101 +20,58 @@
     <b-navbar-toggle target="navbar-collapse"></b-navbar-toggle>
     <b-collapse id="navbar-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item id="about-link" href="#about" @click="scrollIntoView"
+        <b-nav-item href="#about" @click="scrollIntoView"
           >About</b-nav-item
         >
         <b-nav-item
-          id="experience-link"
           href="#experience"
           @click="scrollIntoView"
           >Experience</b-nav-item
         >
         <b-nav-item
-          id="education-link"
           href="#education"
           @click="scrollIntoView"
           >Education</b-nav-item
         >
-        <b-nav-item id="skills-link" href="#skills" @click="scrollIntoView"
+        <b-nav-item href="#skills" @click="scrollIntoView"
           >Skills</b-nav-item
         >
         <b-nav-item
-          id="interests-link"
           href="#interests"
           @click="scrollIntoView"
           >Interests</b-nav-item
         >
-        <b-nav-item id="awards-link" href="#awards" @click="scrollIntoView"
+        <b-nav-item href="#awards" @click="scrollIntoView"
           >Awards</b-nav-item
         >
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 
-  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <div v-on:click.prevent="scrollTo('#about')" class="navbar-brand">
-      <span class="d-block d-lg-none">Loke Carlsson</span>
-      <span class="d-none d-lg-block">
-        <g-image
-          alt="Image of Loke"
-          src="../assets/images/profile.png"
-          class="img-fluid img-profile rounded-circle mx-auto mb-2"
-        />
-      </span>
-    </div>
-
-    <div class="collapse navbar-collapse" id="navbar-collapse">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" id="about-link" v-on:click.prevent="scrollTo('#about')">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="experience-link" v-on:click.prevent="scrollTo('#experience')">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="education-link" v-on:click.prevent="scrollTo('#education')">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="skills-link" v-on:click.prevent="scrollTo('#skills')">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="interests-link" v-on:click.prevent="scrollTo('#interests')">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="awards-link" v-on:click.prevent="scrollTo('#awards')">Awards</a>
-        </li>
-      </ul>
-    </div>
-  </nav> -->
+  
 </template>
 
 <script>
 export default {
   methods: {
-    // scrollTo(element) {
-    //   const targetId = `${element}-link`.replace("#", "");
-    //   const anchorTag = document.getElementById(targetId);
-    //   const navlinks = document.getElementsByClassName("nav-link");
-    //   [...navlinks].forEach((element, index, array) => {
-    //     if (element.id === targetId) anchorTag.className += " active";
-    //     else element.className = "nav-link";
-    //   });
-    //   this.$scrollTo(element);
-    // },
     scrollIntoView(evt) {
       evt.preventDefault();
       console.log(evt.target)
-      const href = evt.target.getAttribute("href");
+      const href = evt.target.getAttribute("href") != null ? evt.target.getAttribute("href") : "#about";
       const el = href ? document.querySelector(href) : null;
       const targetId = href.replace("#", "");
       const anchorTag = document.getElementById(targetId);
       const navlinks = document.getElementsByClassName("nav-link");
+      const navItems = document.getElementsByClassName("nav-item");
       if (el) {
         // this.$refs.content.scrollTop = el.offsetTop;
         [...navlinks].forEach((element, index, array) => {
           const hrefLink = element.getAttribute("href").replace("#", "");
           if (hrefLink === targetId) { element.className += " active"; }
           else element.className = "nav-link";
+        });
+        [...navItems].forEach((element, index, array) => {
+          element.className = "nav-item";
         });
         this.$scrollTo(el);
       }
