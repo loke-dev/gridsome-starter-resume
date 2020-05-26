@@ -650,9 +650,10 @@
   dependencies:
     vue-analytics "^5.16.1"
 
-"@gridsome/plugin-sitemap@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@gridsome/plugin-sitemap/-/plugin-sitemap-0.1.1.tgz#19cc2dbf7e2d8146aa8f952374aa411a29f52d7b"
+"@gridsome/plugin-sitemap@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@gridsome/plugin-sitemap/-/plugin-sitemap-0.3.0.tgz#2ab1a0c0bc73ab4d7724fbedf4994daaf77c99b5"
+  integrity sha512-T7Av4kHOUJW0wynuQTY6sL6pk4NT2sZ34zarDaMF+spr+iqXDrXJsyhOd3+d4C/EfmoP+K2DizQRRR1efACaPA==
   dependencies:
     fs-extra "^7.0.0"
     micromatch "^3.1.10"
