@@ -20,6 +20,6 @@
     "node-sass": "^4.11.0",
     "npm": "^6.14.6",
     "sass-loader": "^7.1.0",
-    "vue-scrollto": "^2.15.0"
+    "vue-scrollto": "^2.18.1"
   }
 }
