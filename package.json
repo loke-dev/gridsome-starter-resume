@@ -12,7 +12,7 @@
     "@fortawesome/vue-fontawesome": "0.1.8",
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/plugin-sitemap": "^0.3.0",
-    "@gridsome/source-filesystem": "^0.3.0",
+    "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.0",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.18",
